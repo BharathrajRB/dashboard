@@ -242,6 +242,7 @@
    overflow: auto;
    background-color: #fff;
    border-radius: 8px;
+   box-shadow: 0px 0px 10px #C0C0C0;
  }
 
  .board img {
@@ -522,10 +523,13 @@
    justify-content: space-between;
    margin-top: 20px;
    flex-wrap: wrap;
+   margin-top: 100px;
+   margin-left: 20px;
+   box-shadow: 0px 0px 10px #C0C0C0;
  }
 
  .card1 {
-   width: 280px;
+   width: 250px;
    background-color: #ffffff;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    border-radius: 8px;
@@ -596,6 +600,8 @@
    margin-top: 20px;
    margin-bottom: 20px;
    flex-wrap: wrap;
+   margin-left: 20px;
+   box-shadow: 0px 0px 10px #C0C0C0;
  }
 
  @media (min-width: 768px) {}
