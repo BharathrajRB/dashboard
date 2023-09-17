@@ -424,147 +424,6 @@
    place-items: center;
  }
 
- .comp {
-   color: #fff;
-   background-color: #3ac47d;
-   padding: 10px;
-   border-radius: 4px;
-   border: 1px solid #3ac47d;
-
- }
-
- .inp {
-   color: #fff;
-   background-color: #d92550;
-   padding: 10px;
-   border-radius: 4px;
-   border: 1px solid #d92550;
- }
-
- .hld {
-   color: #fff;
-   background-color: #16aaff;
-   padding: 10px;
-   border-radius: 4px;
-   border: 1px solid #16aaff;
- }
-
- .first-row {
-   margin-left: 25px;
-   margin-top: 10px;
- }
-
- p {
-   font-family: Arial;
-   margin-top: 0;
-   margin-bottom: 0;
- }
-
- .video-title {
-   margin-top: 0;
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 20px;
-   margin-bottom: 12px;
- }
-
- .channel-picture {
-   display: inline-block;
-   width: 50px;
-   vertical-align: top;
- }
-
- .video-info {
-   display: inline-block;
-   width: 200px;
- }
-
- .profile-picture {
-   width: 40px;
-   border-radius: 50px;
- }
-
- .tright {
-   float: right;
- }
-
- .ta1 {
-   box-shadow: #adb5bd;
- }
-
- .container {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
- }
-
- .range {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   background-color: #cecbcb;
-   padding: 20px;
-   border-radius: 8px;
-   box-shadow: 0px 0px 10px #C0C0C0;
-   margin-left: 15px;
-   margin-bottom: 20px;
-   margin-top: 20px;
-
- }
-
- .sub-range {
-   border: 1px solid white;
-   width: 235px;
-   height: 80px;
-   background-color: white !important;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   flex-direction: column;
-   /* Added to stack elements vertically */
- }
-
- .txt {
-   font-size: 20px;
- }
-
- .range .sub-range {
-   flex: 0 0 20%;
-   max-width: 20%;
-   justify-content: space-between;
-   line-height: 30px;
- }
-
- .range-length {
-   width: 90%;
-   height: 15px;
-   margin-top: 20px;
-   background-color: #E0E0E0;
- }
-
- .range-length .red {
-   background-color: #ff5370;
-   width: 63% !important;
-   height: 15px;
- }
-
- .range-length .green {
-   background-color: greenyellow;
-   width: 32%;
-   height: 15px;
- }
-
- .range-length .blue {
-   background-color: blue;
-   width: 71%;
-   height: 15px;
- }
-
- .range-length .yellow {
-   background-color: yellow;
-   width: 41%;
-   height: 15px;
- }
 
 
  .save {
@@ -611,7 +470,132 @@
  }
 
  /* */
+ .card {
+   width: 250px;
+   background-color: #ffffff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   margin-top: 20px;
+   flex-wrap: wrap;
+   display: inline-block;
+   vertical-align: top;
+ }
 
 
+ .progress-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+ }
+
+
+ .progress-bar {
+   margin-left: 5px;
+   width: 50%;
+   height: 20px;
+   background-color: #3f6ad8;
+   border-radius: 4px;
+   margin-top: 10px;
+ }
+
+ /* Percentage text */
+ .percentage {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ /* Content below progress bar */
+ .content {
+   margin-top: 10px;
+   font-size: 14px;
+   color: #666;
+ }
+
+ .main-cards {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20px;
+   flex-wrap: wrap;
+ }
+
+ .card1 {
+   width: 280px;
+   background-color: #ffffff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   padding: 20px;
+   text-align: center;
+   margin: 10px;
+   display: inline-block;
+   vertical-align: top;
+ }
+
+ .info-container1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .percentage1 {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ .progress-container1 {
+   margin-top: 20px;
+   height: 20px;
+   background-color: #f2f2f2;
+   border-radius: 4px;
+   overflow: hidden;
+ }
+
+ /* Progress bar */
+ .progress-bar-blue1 {
+   width: 0%;
+   height: 100%;
+   background-color: #3f6ad8;
+   border-radius: 4px;
+   transition: width 0.5s;
+ }
+
+ .progress-bar-green1 {
+   width: 0%;
+   height: 100%;
+   background-color: #4caf50;
+   border-radius: 4px;
+   transition: width 0.5s;
+ }
+
+ .progress-bar-orange1 {
+   width: 0%;
+   height: 100%;
+   background-color: #ff9800;
+   border-radius: 4px;
+   transition: width 0.5s;
+ }
+
+ .progress-bar-red1 {
+   width: 0%;
+   height: 100%;
+   background-color: #f44336;
+   border-radius: 4px;
+   transition: width 0.5s;
+ }
+
+ .main-cards2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+ }
 
  @media (min-width: 768px) {}
