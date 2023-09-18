@@ -620,7 +620,7 @@
    border-radius: 50%;
  }
 
- @media (max-width: 1024px) {
+ @media (max-width: 769px) {
    .navbar {
      display: none;
    }
@@ -699,24 +699,28 @@
      margin-top: 20px;
    }
 
+   .s1-four {
+     margin-top: 20px;
+   }
+
    .board {
      width: 92%;
      padding: 0;
      overflow-x: auto;
    }
 
+
+
    table {
      width: 100%;
      border-collapse: collapse;
    }
 
-   /* .s1-four1 {
-     display: block;
-     margin-top: 20px;
-   } */
+
  }
 
- @media (max-width: 768px) {
+
+ @media (max-width: 767px) {
    .card1 {
      width: 550px;
    }
@@ -725,16 +729,17 @@
      width: 550px;
    }
 
+   /* 
    .s1-sec {
      margin-top: 20px;
-   }
+   } */
 
    .s1-fst,
    .s1-sec,
    .s1-third,
    .s1-four1 {
      flex: 1;
-     max-width: 550px;
+     max-width: 400px;
      min-width: 300px;
      height: 100px;
      background-color: yellowgreen;
@@ -743,6 +748,24 @@
      align-items: center;
      padding: 10px;
      margin-right: 20px;
-     margin-left: 20px;
+     margin-top: 20px;
+     margin-left: 10px;
+   }
+
+   .main-cards {
+     /* display: flex;
+     align-items: center;
+     justify-content: space-between; */
+     margin-top: 20px;
+     flex-wrap: wrap;
+     margin-top: 100px;
+     margin-left: 10px;
+     box-shadow: 0px 0px 10px #C0C0C0;
+   }
+
+   .board {
+     width: 90%;
+     padding: 0;
+     overflow-x: auto;
    }
  }
