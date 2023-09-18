@@ -210,7 +210,7 @@
  }
 
  .s {
-   margin-bottom: 30px;
+   margin-bottom: 60px;
  }
 
  .sidebar::-webkit-scrollbar:hover {
@@ -361,11 +361,9 @@
    margin-top: 5px;
  }
 
-
-
  .s1 {
    width: 100%;
-   height: 100px;
+   min-height: 100px;
    background-color: rgba(255, 255, 255, .45);
    display: flex;
    flex-wrap: wrap;
@@ -373,41 +371,24 @@
    justify-content: space-between;
  }
 
- /* .s1 .left {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } */
-
- .s1-fst {
-   width: 300px;
+ .s1-fst,
+ .s1-sec,
+ .s1-third,
+ .s1-four1 {
+   flex: 1;
+   max-width: 300px;
+   min-width: 300px;
    height: 100px;
    background-color: yellowgreen;
    display: flex;
    justify-content: space-between;
-   place-items: center;
+   align-items: center;
    padding: 10px;
    margin-right: 20px;
  }
 
- .s1-fst.right {
-   display: flex;
-   place-items: center;
- }
-
- .s1-sec {
-   width: 300px;
-   height: 95px;
-   background-color: red;
-   display: flex;
-   padding: 10px;
-   justify-content: space-between;
-   place-items: center;
- }
-
- .s1-sec.right {
-   display: flex;
-   place-items: center;
+ .s1-four1 {
+   display: none;
  }
 
  .s1-third {
@@ -424,8 +405,6 @@
    display: flex;
    place-items: center;
  }
-
-
 
  .save {
    cursor: pointer;
@@ -604,4 +583,166 @@
    box-shadow: 0px 0px 10px #C0C0C0;
  }
 
- @media (min-width: 768px) {}
+ .ipad {
+   display: none;
+ }
+
+ .user-menu1 {
+   display: none;
+   position: absolute;
+   top: 40px;
+   right: 0;
+   width: 100%;
+   background-color: white;
+   border: 1px solid #ccc;
+   padding: 10px;
+   z-index: 1;
+ }
+
+ .usermenu2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: sticky;
+ }
+
+ .user-menu1 i {
+   width: 50px;
+   height: 50px;
+   padding: 10px;
+   margin-top: 3px;
+
+ }
+
+ .profile-picture {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+ }
+
+ @media (max-width: 1024px) {
+   .navbar {
+     display: none;
+   }
+
+   .ipad {
+     display: block;
+     top: 0;
+     left: 0;
+     background-color: #fafbfc;
+     color: black;
+     width: 100%;
+     padding: 10px 20px;
+     z-index: 100;
+     position: fixed;
+   }
+
+   .ipad .nav-ipad {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+
+   .main {
+     margin-left: 0px;
+     transition: margin-left 0.3s ease;
+     background-color: rgba(255, 255, 255, .45) !important;
+     /* Added transition for smooth margin change */
+   }
+
+   .card1 {
+     width: 300px;
+   }
+
+   .card {
+     width: 300px;
+   }
+
+   .sidebar {
+     position: fixed;
+     top: 30px;
+     left: 0;
+     width: 200px;
+     height: 100%;
+     background-color: #fafbfc;
+     transition: left 0.3s ease;
+     z-index: 90;
+   }
+
+   .sidebar-closed {
+     left: -200px;
+   }
+
+   /* Sidebar button styles */
+   .sidebar-buttons {
+     list-style: none;
+     padding: 20px;
+   }
+
+   .sidebar-button {
+     background-color: #fafbfc;
+     color: black;
+     border: none;
+     padding: 10px 20px;
+     width: 100%;
+     cursor: pointer;
+     border-radius: 5px;
+     margin-bottom: 5px;
+     transition: background-color 0.3s ease;
+   }
+
+   .sidebar-button:hover {
+     background-color: #e0f3ff;
+   }
+
+   .s1-third {
+     margin-top: 20px;
+   }
+
+   .board {
+     width: 92%;
+     padding: 0;
+     overflow-x: auto;
+   }
+
+   table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+
+   /* .s1-four1 {
+     display: block;
+     margin-top: 20px;
+   } */
+ }
+
+ @media (max-width: 768px) {
+   .card1 {
+     width: 550px;
+   }
+
+   .card {
+     width: 550px;
+   }
+
+   .s1-sec {
+     margin-top: 20px;
+   }
+
+   .s1-fst,
+   .s1-sec,
+   .s1-third,
+   .s1-four1 {
+     flex: 1;
+     max-width: 550px;
+     min-width: 300px;
+     height: 100px;
+     background-color: yellowgreen;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+   }
+ }
